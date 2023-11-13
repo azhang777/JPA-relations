@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  concert:
+    image: azhang77/andysql
+    environment:
+      MYSQL_DATABASE: 'concert_db' # make sure it's surrounded by single quotes
+      MYSQL_ROOT_PASSWORD: '@Ndy021003'
+    ports:
+      - "3305:3306"
+    expose:
+      - '3305'
+    volumes:
+      - mysql-volume:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  mysql-volume:
