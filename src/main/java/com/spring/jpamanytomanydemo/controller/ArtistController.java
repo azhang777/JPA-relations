@@ -34,6 +34,7 @@ public class ArtistController {
     public ResponseEntity<?> updateArtist(@PathVariable Long id, @RequestBody Artist updatedArtist) {
         return new ResponseEntity<>(artistService.updateArtist(id, updatedArtist), HttpStatus.OK);
     }
+
     @DeleteMapping("/artists/{id}")
     public ResponseEntity<?> deleteArtist(@PathVariable Long id) {
 

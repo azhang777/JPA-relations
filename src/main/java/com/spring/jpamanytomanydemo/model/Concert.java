@@ -40,6 +40,12 @@ public class Concert {
     public Concert() {
     }
 
+    public Concert(String eventName, String location, Date date) {
+        this.eventName = eventName;
+        this.location = location;
+        this.date = date;
+    }
+
     public Concert(Long id, String eventName, String location, Date date, Set<Artist> artistList) {
         this.id = id;
         this.eventName = eventName;

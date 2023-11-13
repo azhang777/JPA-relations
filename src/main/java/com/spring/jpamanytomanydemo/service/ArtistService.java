@@ -11,6 +11,7 @@ import javax.transaction.Transactional;
 public class ArtistService {
     @Autowired
     private ArtistRepository artistRepository;
+
     public Artist addArtist(Artist artist) {
         return artistRepository.save(artist);
     }

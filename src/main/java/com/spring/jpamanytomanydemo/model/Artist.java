@@ -21,10 +21,14 @@ public class Artist {
     @NotBlank
     private String name;
 
-    @ManyToMany(mappedBy = "artists")
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL}, mappedBy = "artists")
     private Set<Concert> concerts = new HashSet<>();
 
     public Artist() {
+    }
+
+    public Artist(String name) {
+        this.name = name;
     }
 
     public Artist(Long id, String name, Set<Concert> concerts) {
