@@ -1,4 +1,4 @@
-# concert-API, Many to Many relationship
+# sample concert-API, Many to Many relationship
 ![image](https://github.com/azhang777/concert-API/assets/67079259/c2b5d688-91a7-437f-a6a0-de4ca2e45ae7)
 
 # Following Tables
